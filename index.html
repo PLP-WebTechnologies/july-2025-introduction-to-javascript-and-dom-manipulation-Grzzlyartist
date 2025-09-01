@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactive Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JavaScript Interactive Playground</h1>
+            <p class="subtitle">Demonstrating DOM manipulation with pure JavaScript</p>
+        </header>
+
+        <div class="dashboard">
+            <div class="card">
+                <h2>Part 1: Variables & Conditionals</h2>
+                <p>Enter your age to check eligibility:</p>
+                <input type="number" id="ageInput" class="input-field" placeholder="Enter your age">
+                <button id="checkAgeBtn" class="button">Check Eligibility</button>
+                <div id="ageResult" class="result-box">Result will appear here</div>
+            </div>
+
+            <div class="card">
+                <h2>Part 2: Functions</h2>
+                <p>Calculate the area of a rectangle:</p>
+                <input type="number" id="widthInput" class="input-field" placeholder="Width">
+                <input type="number" id="heightInput" class="input-field" placeholder="Height">
+                <button id="calculateAreaBtn" class="button">Calculate Area</button>
+                <div id="areaResult" class="result-box">Result will appear here</div>
+                
+                <p class="mt-20">Convert temperature:</p>
+                <input type="number" id="tempInput" class="input-field" placeholder="Temperature">
+                <select id="tempUnit" class="input-field">
+                    <option value="celsius">Celsius to Fahrenheit</option>
+                    <option value="fahrenheit">Fahrenheit to Celsius</option>
+                </select>
+                <button id="convertTempBtn" class="button">Convert Temperature</button>
+                <div id="tempResult" class="result-box">Result will appear here</div>
+            </div>
+
+            <div class="card">
+                <h2>Part 3: Loops</h2>
+                <p>Generate multiplication table:</p>
+                <input type="number" id="multiplierInput" class="input-field" placeholder="Enter a number" min="1" max="12">
+                <button id="generateTableBtn" class="button">Generate Table</button>
+                <div id="tableResult" class="result-box">Table will appear here</div>
+                
+                <p class="mt-20">Count even numbers up to:</p>
+                <input type="number" id="evenInput" class="input-field" placeholder="Enter a number">
+                <button id="countEvenBtn" class="button">Count Even Numbers</button>
+                <div id="evenResult" class="result-box">Result will appear here</div>
+            </div>
+
+            <div class="card">
+                <h2>Part 4: DOM Interactions</h2>
+                <p>Add items to the list:</p>
+                <input type="text" id="itemInput" class="input-field" placeholder="Enter item name">
+                <button id="addItemBtn" class="button">Add Item</button>
+                
+                <p class="mt-20">User list:</p>
+                <ul id="userList" class="user-list">
+                    <li>Example item <button class="delete-btn">Delete</button></li>
+                </ul>
+                
+                <p class="mt-20">Toggle theme:</p>
+                <button id="themeToggleBtn" class="button">Toggle Dark/Light Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
